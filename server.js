@@ -28,7 +28,9 @@ app.use(
 app.use(flash());
 
 app.get("/", function (req, res) {
+   
   if (userExists) {
+    currURL = "/";
     return res.render("index.ejs", { message: req.flash("message") });
   } else {
     return res.redirect("/login");
@@ -56,7 +58,7 @@ app.post("/login", function (req, res) {
   let email = req.body.email;
   currentEmail = email;
   let password = req.body.password;
-  fs.readFile("database.json", function (err, data) {
+  fs.readFile("userDatabase.json", function (err, data) {
     if (err) {
       console.log(err);
     }
@@ -95,7 +97,7 @@ app.post("/register", function (req, res) {
   let email = req.body.email;
   let name = req.body.name;
   let password = req.body.password;
-  fs.readFile("database.json", function (err, data) {
+  fs.readFile("userDatabase.json", function (err, data) {
     if (err) {
       console.log(err);
     }
@@ -103,7 +105,7 @@ app.post("/register", function (req, res) {
     existingData[id] = { id: id, name: name, email: email, password: password };
 
     fs.writeFile(
-      "database.json",
+      "userDatabase.json",
       JSON.stringify(existingData, null, 2),
       function (err) {
         if (err) {
