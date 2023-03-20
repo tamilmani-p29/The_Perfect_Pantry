@@ -1,1 +1,26 @@
-this is registration page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP | Register</title>
+
+</head>
+<body>
+    <div class="container"> 
+        <div class="heading">Register Now</div> 
+        <div class="form-container"> 
+            <form id="register-form" action="/register" method="POST"> 
+                <input name="name" type="text" placeholder="Enter your name"></input> 
+                <input name="email" type="email" placeholder="Enter your email"></input> 
+                <input name="password" type="password" placeholder="Enter your password"></input>  
+                <button type="submit">Register</button>
+            </form> 
+        <div class="old-user"> 
+            Already have an account? <a href="http://localhost:8080/login">Login Here</a>
+        </div>
+        </div>
+    </div>    
+</body>
+</html>
