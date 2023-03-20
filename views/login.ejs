@@ -4,26 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APP | Register</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>THE PERFECT PANTRY | LOGIN</title>
 
 </head>
 <body>
-        <div class="container"> 
-        <div class="heading">Login Now</div> 
+    <div class="login-page">  
+        <div class="app-details">
+            <div class="logo">
+                <div class="app-logo"><img class="logo-img" src="./assets/logo.png" alt="pantry-logo"></div>
+                <div class="app-name">The Perfect Pantry</div>  
+            </div>
+            <div class="background-image"><img class="pantry-background" src="./assets/pantry4.png" alt="pantry-background"></div>
+        </div>
         <div class="form-container"> 
-
-            <form id="login-form" action="/login" method="POST"> 
-                <input type="email" name="email" placeholder="Enter your email"></input> 
-                <input type="password" name="password" placeholder="Enter your password"></input>  
-                <button type="submit">Login</button>
+            <div class="heading">Login to your Account</div> 
+            <form class="login-form" id="login-form" action="/login" method="POST"> 
+                <div class="email-details">
+                    <label class="field-label" for="email">Email</label><br>
+                    <input type="email" name="email" placeholder="abc@gmail.com"></input> 
+                </div>
+                <div class="password-details">
+                    <label class="field-label" for="email">Password</label><br>
+                    <input type="password" name="password" placeholder="....."></input>
+                </div>
+                <div class="login-btn">
+                    <button class="submit" type="submit">Login</button> 
+                </div>
+                
+                <div class="new-user"> 
+                    New to this page ? <br>
+                    <a href="http://localhost:8080/register">Register Here</a>
+                </div>
             </form> 
         <% if (message) { %>
-            <%= message %>
+            <div class="alert-msg"><%= message %></div>
         <% } %>
         
-        </div>
-        <div class="new-user"> 
-            New to this page ? <a href="http://localhost:8080/register">Register Here</a>
         </div>
     </div>
     <script src="script.js"></script>

@@ -1,0 +1,127 @@
+@import "reset.css";
+
+body{
+    background-color: #2A9187; 
+}
+*{
+    
+    font-family: 'Righteous', cursive;
+} 
+
+.login-page{
+    display: flex; 
+}
+
+.form-container{
+    background-color: white; 
+    margin: 70px 120px 50px auto; 
+    width: 500px;  
+    border-radius: 60px; 
+    box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
+} 
+
+.app-details{
+    display: grid; 
+    grid-template-rows: 8% 92%;
+    margin-top: 50px;
+} 
+
+.pantry-background{
+    width: 420px; 
+    height: auto; 
+    margin-left: 124px;
+    margin-top: 20px;
+} 
+
+.login-form{
+    margin-top: 40px; 
+    margin-left: 36px;
+    margin-right: 36px;
+    font-size: 22px;
+} 
+
+.logo{
+    display: grid; 
+    grid-template-columns: 100px 1fr; 
+    margin-top: 40px; 
+    margin-left: 72px;
+} 
+
+.logo-img{
+    width: 48px; 
+    height: auto; 
+    margin-left: 40px;
+} 
+
+.app-name{
+    font-size: 40px; 
+    color: white;
+    text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.4);
+} 
+
+.heading{
+    margin-top: 32px; 
+    text-align: center; 
+    font-size: 24px;
+} 
+
+input{
+    height: 52px; 
+    border-radius: 40px;
+    margin-top: 30px; 
+    background-color: #EAEAEA;
+    outline: none;
+    border-style: hidden;
+    width: 100%;
+    font-size: 22px;
+    padding-left: 20px;
+    padding-right: -40px;
+} 
+
+.field-label{
+    margin-top: 40px;
+} 
+
+.new-user a{
+    text-decoration: none; 
+    color: #1B655E;
+} 
+
+.email-details{
+    margin-bottom: 20px;
+}
+.password-details{
+    margin-top: 30px;
+} 
+
+.new-user{
+    margin-top: 20px; 
+    margin-left: -36px; 
+    margin-right: -36px; 
+    text-align: center;
+    font-size: 18px;
+} 
+
+.submit{
+    width: 160px; 
+    height: 52px; 
+    border-radius: 50px;
+    border-style: hidden;
+    background-color: #114443; 
+    color: white; 
+    font-size: 24px;
+    cursor: pointer;
+}
+.login-btn{
+    text-align: center;
+    margin-left: -36px;
+    margin-right: -36px;
+    margin-top: 30px;
+} 
+.alert-msg{
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #DC3030;
+}
