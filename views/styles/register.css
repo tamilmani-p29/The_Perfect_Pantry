@@ -14,7 +14,7 @@ body{
 
 .form-container{
     background-color: white; 
-    margin: 40px 120px 50px auto; 
+    margin: 32px 120px 50px auto; 
     width: 500px;  
     border-radius: 60px; 
     box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
@@ -26,11 +26,15 @@ body{
     margin-top: 50px;
 } 
 
+.app-logo{
+    margin-top: -8px;
+}
+
 .pantry-background{
-    width: 420px; 
+    width: 660px; 
     height: auto; 
-    margin-left: 124px;
-    margin-top: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
 } 
 
 .register-form{ 
@@ -59,7 +63,7 @@ body{
 } 
 
 .heading{
-    margin-top: 32px; 
+    margin-top: 20px; 
     text-align: center; 
     font-size: 24px;
 } 
@@ -98,7 +102,7 @@ input{
 } 
 
 .old-user{
-    margin-top: 20px; 
+    margin-top: 16px; 
     margin-left: -36px; 
     margin-right: -36px; 
     text-align: center;

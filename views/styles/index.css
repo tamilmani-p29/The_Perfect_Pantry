@@ -1,0 +1,7 @@
+@import "reset.css"; 
+
+.homepage{
+    margin: 40px; 
+    background-color: #2A9187; 
+    border-radius: 50px;
+}

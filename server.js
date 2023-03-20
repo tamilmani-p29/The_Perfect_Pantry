@@ -11,7 +11,7 @@ const port = 5000;
 let userExists = false;
 let currentEmail;
 let currURL;
-let userCreated = false;
+let userCreated = true;
 
 app.set("view-engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
@@ -29,7 +29,6 @@ app.use(
 app.use(flash());
 
 app.get("/", function (req, res) {
-   
   if (userExists) {
     currURL = "/";
     return res.render("index.ejs", { message: req.flash("message") });
@@ -94,8 +93,7 @@ app.post("/login", function (req, res) {
   });
 });
 
-app.post("/register", function (req, res) { 
-
+app.post("/register", function (req, res) {
   let id = Date.now().toString();
   let email = req.body.email;
   let name = req.body.name;
@@ -105,25 +103,38 @@ app.post("/register", function (req, res) {
       console.log(err);
     }
     const existingData = JSON.parse(data);
-    existingData[id] = { id: id, name: name, email: email, password: password };
-    userCreated = true;
-    fs.writeFile(
-      "userDatabase.json",
-      JSON.stringify(existingData, null, 2),
-      function (err) {
-        if (err) {
-          console.log(err);
-        } else {
-          console.log("successfully written");
-          
+    console.log(existingData);
+    oldUserData = Object.values(existingData);
+    for (let index = 0; index < oldUserData.length; index++) {
+      if (oldUserData[index].email === email ) {
+        userCreated = false;
+      } 
+    }
+    if (userCreated === true) {
+      existingData[id] = {
+        id: id,
+        name: name,
+        email: email,
+        password: password,
+      };
+      fs.writeFile(
+        "userDatabase.json",
+        JSON.stringify(existingData, null, 2),
+        function (err) {
+          if (err) {
+            console.log(err);
+          } else {
+            console.log("successfully written");
+          }
         }
-      }
-    );
+      );
+      req.flash("message", "Account created successfully");
+      res.redirect("/login");
+    } else {
+      req.flash("message", "User already exists with same mail");
+      res.redirect("/register");
+    }
   });
-  
-req.flash("message", "Account Created Successfully");
-res.redirect("/login");
-  
 });
 
 app.post("/logout", function (req, res) {
