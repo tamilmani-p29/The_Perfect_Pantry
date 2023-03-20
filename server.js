@@ -11,6 +11,7 @@ const port = 5000;
 let userExists = false;
 let currentEmail;
 let currURL;
+let userCreated = false;
 
 app.set("view-engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
@@ -49,11 +50,12 @@ app.get("/register", function (req, res) {
   if (userExists) {
     res.redirect(currURL);
   } else {
-    res.render("register.ejs");
+    res.render("register.ejs", { message: req.flash("message") });
   }
 });
 
 app.post("/login", function (req, res) {
+  userCreated = false;
   userExists = false;
   let email = req.body.email;
   currentEmail = email;
@@ -92,7 +94,8 @@ app.post("/login", function (req, res) {
   });
 });
 
-app.post("/register", function (req, res) {
+app.post("/register", function (req, res) { 
+
   let id = Date.now().toString();
   let email = req.body.email;
   let name = req.body.name;
@@ -103,7 +106,7 @@ app.post("/register", function (req, res) {
     }
     const existingData = JSON.parse(data);
     existingData[id] = { id: id, name: name, email: email, password: password };
-
+    userCreated = true;
     fs.writeFile(
       "userDatabase.json",
       JSON.stringify(existingData, null, 2),
@@ -112,11 +115,15 @@ app.post("/register", function (req, res) {
           console.log(err);
         } else {
           console.log("successfully written");
+          
         }
       }
     );
   });
-  res.redirect("/login");
+  
+req.flash("message", "Account Created Successfully");
+res.redirect("/login");
+  
 });
 
 app.post("/logout", function (req, res) {

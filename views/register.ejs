@@ -4,23 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APP | Register</title>
+    <link rel="stylesheet" href="styles/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>THE PERFECT PANTRY | Register</title>
 
 </head>
 <body>
-    <div class="container"> 
-        <div class="heading">Register Now</div> 
+    <div class="register-page">  
+        <div class="app-details">
+            <div class="logo">
+                <div class="app-logo"><img class="logo-img" src="./assets/logo.png" alt="pantry-logo"></div>
+                <div class="app-name">The Perfect Pantry</div>  
+            </div>
+            <div class="background-image"><img class="pantry-background" src="./assets/pantry4.png" alt="pantry-background"></div>
+        </div>
         <div class="form-container"> 
-            <form id="register-form" action="/register" method="POST"> 
-                <input name="name" type="text" placeholder="Enter your name"></input> 
-                <input name="email" type="email" placeholder="Enter your email"></input> 
-                <input name="password" type="password" placeholder="Enter your password"></input>  
-                <button type="submit">Register</button>
+            <div class="heading">Register your Account</div> 
+            <form class="register-form" id="register-form" action="/register" method="POST"> 
+                <div class="name-details">
+                    <label class="field-label" for="name">Name</label><br>
+                    <input type="name" name="name" placeholder="SteveRogers"></input> 
+                </div>
+                <div class="email-details">
+                    <label class="field-label" for="email">Email</label><br>
+                    <input type="email" name="email" placeholder="abc@gmail.com"></input> 
+                </div>
+                <div class="password-details">
+                    <label class="field-label" for="email">Password</label><br>
+                    <input type="password" name="password" placeholder="....."></input>
+                </div>
+                <div class="login-btn">
+                    <button class="submit" type="submit">Register</button> 
+                </div>
+                
+                <div class="old-user"> 
+                    Already Have an account ? <br>
+                    <a href="http://localhost:5000/login">Login Here</a>
+                </div>
             </form> 
-        <div class="old-user"> 
-            Already have an account? <a href="http://localhost:8080/login">Login Here</a>
+        <% if (message) { %>
+            <div class="alert-msg"><%= message %></div>
+        <% } %>
+        
         </div>
-        </div>
-    </div>    
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
