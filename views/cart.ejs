@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <title>THE PERFECT PANTRY | YOUR CART</title>
+</head>
+<body>
+    <div class="homepage"> 
+        <div class="left-options">
+            <div class="app-details"> 
+                <div class="app-logo"><img class="logo-img" src="./assets/general-images/logo.png"></div> 
+                <div class="app-name">The Perfect Pantry</div>
+            </div> 
+            <div class="display-product-img"> 
+                <img class="product-img" src="./assets/groceries/fruits/apple.jpg">
+            </div>
+            <div class="back-home"> 
+                <form action="/">
+                    <button type="submit" class="home-btn">Back To Home</button>
+                </form>
+            </div>
+            <div class="logout-btn"> 
+                <form action="/logout" method="POST">
+                    <button class="logout" type="submit">Logout</button> 
+                </form>
+            </div>
+        </div>
+        <div class="display-container"> 
+            <div class="options-tab"> 
+                <div class="search-bar">
+                    <input type="text" name="search-bar" placeholder="Search here"> 
+                    <img class="search-icon" src="./assets/general-images/search.png">
+                </div> 
+                <div class="cart"> 
+                    <a href="/cart"><img id="cart-img" class="cart-img" src="./assets/general-images/shopping-cart.png" alt="cart-option"></a>
+                </div>
+                <div class="profile">
+                    <a href="/profile"><img class="profile-img" src="./assets/general-images/account.png" alt="profile-option"></a>
+                </div>
+            </div> 
+            <div id="cart-page" class="cart-container"> 
+                <div class="cart-heading">Your Cart</div>
+                <div class="cart-cols"> 
+                    <div class="product-name-title">Product</div> 
+                    <div class="quantity-title">Quantity</div> 
+                    <div class="price-title">Price</div>
+                </div>  
+                <div id="cart-items" class="cart-items"> 
+                    <div class="cart-item">
+                        <div class="product-name">Apple</div> 
+                        <div class="quantity">2</div>
+                        <div class="price">20</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="product-name">Apple</div> 
+                        <div class="quantity">2</div>
+                        <div class="price">20</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="product-name">Apple</div> 
+                        <div class="quantity">2</div>
+                        <div class="price">20</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="product-name">Apple</div> 
+                        <div class="quantity">2</div>
+                        <div class="price">20</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="product-name">Apple</div> 
+                        <div class="quantity">2</div>
+                        <div class="price">20</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="product-name">Apple</div> 
+                        <div class="quantity">2</div>
+                        <div class="price">20</div>
+                    </div> 
+                    <div class="cart-item">
+                        <div class="product-name">Apple</div> 
+                        <div class="quantity">2</div>
+                        <div class="price">20</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="product-name">Apple</div> 
+                        <div class="quantity">2</div>
+                        <div class="price">20</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="product-name">Apple</div> 
+                        <div class="quantity">2</div>
+                        <div class="price">20</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="product-name">Apple</div> 
+                        <div class="quantity">2</div>
+                        <div class="price">20</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="product-name">Apple</div> 
+                        <div class="quantity">2</div>
+                        <div class="price">20</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="product-name">Apple</div> 
+                        <div class="quantity">2</div>
+                        <div class="price">20</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="product-name">Apple</div> 
+                        <div class="quantity">2</div>
+                        <div class="price">20</div>
+                    </div>
+                </div>
+                <div class="total-container">  
+                    <div class="total-title">Total</div> 
+                    <div id="total-value" class="total-value">300</div> 
+                    <div class="buy-option">
+                        <button id="buy-btn" class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div id="buy-container" class="buy-container">
+                    <div class="buy-result-container"> 
+                        <span id="close-btn" class="close">&times;</span>
+                        <div class="buy-success-msg">Hurray! Products Bought Successfully</div>
+                        <div class="purchase-img"><img class="purchase-success" src="./assets/general-images/purchase-success.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/cart.js"></script>
+    <!-- <script src="./scripts/index.js"></script> -->
+</body>
+</html>

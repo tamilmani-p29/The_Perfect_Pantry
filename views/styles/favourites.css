@@ -1,0 +1,229 @@
+@import "reset.css"; 
+
+*{
+    font-family: 'Righteous', cursive;
+} 
+
+body{
+    background-color:#2A9187;
+    height: 70vh;
+
+}
+.homepage{
+    margin: 24px; 
+    background-color: #ffffff; 
+    border-radius: 50px;
+    display: grid; 
+    grid-template-columns: 12% 88%;
+} 
+
+.app-details{
+    display: grid; 
+    grid-template-columns: 20% 80%; 
+    margin-top: 60px;
+} 
+
+.app-name{
+    font-size: 16px;
+    margin-left: 20px;
+}
+.categories{
+    margin-left: 12px;
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    align-items: center;
+}
+.logo-img{
+    width: 32px; 
+    height: auto;
+} 
+
+.display-container{
+    background-color: #f3f3f3; 
+    margin: 20px;
+    padding: 16px;
+    border-radius: 28px;
+} 
+
+.cart-img, .profile-img{
+    width: 40px; 
+    height: auto;
+    cursor: pointer;
+}
+.options-tab{
+    display: grid; 
+    grid-template-columns: 1fr 48px 48px;
+    margin-bottom: 12px;
+} 
+
+input{
+    width: 94%; 
+    height: 32px;
+    border-radius: 14px;
+    border-style: hidden;
+    padding-left: 20px;
+    font-size: 18px;
+    background-color: #EAEAEA;
+    border: 1px solid #124544;
+    outline: none;
+} 
+
+.grocery-card{
+    background-image: url('./assets/groceries/fruits/apple.jpg');
+    display: grid; 
+    grid-template-rows:  1fr 24px 24px 40px; 
+    min-width: 236px;
+    max-width: 236px;
+    height: 170px;
+    background-color: #E3FCEC; 
+    text-align: center; 
+    border-radius: 20px;
+    padding: 8px 0px 8px 0px;
+} 
+
+.img-item{
+    width: 130px; 
+    height: auto;
+    border-radius: 12px;
+} 
+
+.fav-img{
+    width: 22px; 
+    height: auto;
+    align-self: start;
+    cursor: pointer; 
+} 
+
+.add-options{
+    display: grid; 
+    grid-template-columns: 64% 36%;
+} 
+
+.add-to-cart{
+    text-align: right;
+} 
+
+.favorite{
+    text-align: left;  
+    align-items: center; 
+    margin-left: 10px; 
+    margin-top: 4px;
+}
+
+.favourite-items-carousel{
+    display: flex; 
+    max-width: 1120px;
+    height: 206px;
+    overflow-x: scroll;
+    column-gap: 28px;
+} 
+
+.pantry-items{
+    position: relative;
+}
+
+.favourite-heading, .pastorders-heading{
+    margin-bottom: 12px;
+    font-size: 20px;
+} 
+.pastorders-heading{
+    margin-top: 12px;
+}
+
+.category-title{
+    font-size: 18px; 
+    font-weight: 500;
+    margin-left: 12px;
+    background-color: #6ED7D3; 
+    padding: 12px;
+    border-radius: 22px;
+}
+
+.logout, .home-btn{
+    background-color: #6ED7D3;
+    border-style: hidden;
+    padding: 14px; 
+    width: 120px; 
+    border-radius: 20px;
+    margin-left: 16px; 
+    font-size: 16px;
+    cursor: pointer;
+} 
+
+.logout{
+    margin-top: 60px;
+}
+.home-btn{
+    padding: 8px;
+    margin-top: 120px;
+    margin-bottom: -90px;
+}
+
+.home-btn:hover{
+    box-shadow: 2px 4px 2px #9b9b9b;
+}
+.logout:hover{
+    box-shadow: 2px 4px 2px #bcbdbd;
+}
+.cart-add{
+    cursor: pointer;
+    padding:8px; 
+    background-color: #124544;
+    border-style: hidden;
+    border-radius: 12px;
+    color: white;
+    align-self: end;
+} 
+
+.search-icon{
+    width: 30px; 
+    height: auto; 
+    position: absolute; 
+    top: 3px; 
+    right: 46px;
+    cursor: pointer;
+} 
+
+.search-bar{
+    position: relative;
+} 
+
+.prev-btn, .next-btn{
+    width: 32px; 
+    height: auto; 
+    position: absolute; 
+    top: 34%;
+    opacity: 0.7;
+    cursor: pointer;
+} 
+
+.prev-btn{
+    left: -15px;
+} 
+
+.next-btn{
+    right: -15px;
+}  
+
+.pastorder-cols, .pastorder-item{
+    display: flex;  
+    justify-content: space-around; 
+    flex-direction: row;
+    font-size: 18px; 
+    width: 98%; 
+    padding: 10px;
+}  
+
+.pastorder-item{
+    background-color: #6ED7D3; 
+    border-radius: 20px;
+}
+
+.pastorder-items{
+    min-height: 154px; 
+    max-height: 154px;
+    overflow-y: auto;
+    display: flex; 
+    flex-direction: column; 
+    row-gap: 20px;
+} 

@@ -1,7 +1,248 @@
 @import "reset.css"; 
 
-.homepage{
-    margin: 40px; 
-    background-color: #2A9187; 
-    border-radius: 50px;
+*{
+    font-family: 'Righteous', cursive;
+} 
+
+body{
+    background-color:#2A9187;
+    height: 70vh;
+
 }
+.homepage{
+    margin: 28px; 
+    background-color: #ffffff; 
+    border-radius: 50px;
+    display: grid; 
+    grid-template-columns: 12% 88%;
+} 
+
+.app-details{
+    display: grid; 
+    grid-template-columns: 20% 80%; 
+    margin-top: 16px;
+} 
+
+.app-name{
+    font-size: 16px;
+    margin-left: 20px;
+}
+.categories{
+    margin-left: 12px;
+    display: grid;
+    grid-template-rows: repeat(9 1fr);
+    align-items: center;
+}
+.logo-img{
+    width: 32px; 
+    height: auto;
+} 
+
+.display-container{
+    background-color: #f3f3f3; 
+    margin: 20px;
+    padding: 16px;
+    border-radius: 28px;
+} 
+
+.cart-img, .profile-img{
+    width: 40px; 
+    height: auto;
+    cursor: pointer;
+}
+.options-tab{
+    display: grid; 
+    grid-template-columns: 1fr 48px 48px;
+    margin-bottom: 12px;
+} 
+
+.search-input{
+    width: 94%; 
+    height: 32px;
+    border-radius: 14px;
+    border-style: hidden;
+    padding-left: 20px;
+    font-size: 18px;
+    background-color: #EAEAEA;
+    border: 1px solid #124544;
+    outline: none;
+} 
+
+.grocery-card{
+    background-image: url('./assets/groceries/fruits/apple.jpg');
+    display: grid; 
+    grid-template-rows:  1fr 24px 24px 40px; 
+    min-width: 236px;
+    max-width: 236px;
+    height: 170px;
+    background-color: #E3FCEC; 
+    text-align: center; 
+    border-radius: 20px;
+    padding: 8px 0px 8px 0px;
+} 
+
+.img-item{
+    width: 130px; 
+    height: 80px;
+    border-radius: 12px;
+} 
+
+.fav-img{
+    width: 20px; 
+    height: auto;
+} 
+
+.add-options{
+    display: grid; 
+    grid-template-columns: 50% 20% 30%;
+} 
+
+.favorite{
+    text-align: left;  
+    align-items: center; 
+    margin-top: 4px;
+}
+
+.popular-items-carousel, .pantry-items-carousel{
+    display: flex; 
+    max-width: 1120px;
+    height: 206px;
+    overflow-x: scroll;
+    column-gap: 28px;
+} 
+
+.pantry-items{
+    position: relative;
+}
+
+.popular-heading, .pantry-items-heading{
+    margin-bottom: 12px;
+    font-size: 20px;
+} 
+
+.category-title{
+    font-size: 22px; 
+    font-weight: 500;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+.category-fruits, .category-vegetables, 
+.category-pasteries, .category-beverages, .category-dairy, 
+.category-snacks{
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+.category-fruits:hover, .category-vegetables:hover, 
+.category-pasteries:hover, .category-beverages:hover, .category-dairy:hover, 
+.category-snacks:hover{ 
+    background-color: #6ED7D3;
+}
+
+.background-color-adder{
+    background-color: #6ED7D3;
+}
+.logout{
+    background-color: #6ED7D3;
+    border-style: hidden;
+    padding: 14px; 
+    width: 120px; 
+    border-radius: 20px;
+    margin-left: 16px; 
+    font-size: 16px;
+    cursor: pointer;
+} 
+
+.logout:hover{
+    box-shadow: 4px 6px 2px #124544;
+}
+.cart-add{
+    cursor: pointer;
+    padding:8px; 
+    background-color: #124544;
+    border-style: hidden;
+    border-radius: 12px;
+    color: white;
+    align-self: end;
+} 
+
+.search-icon{
+    width: 30px; 
+    height: auto; 
+    position: absolute; 
+    top: 3px; 
+    right: 46px;
+    cursor: pointer;
+} 
+
+.search-bar{
+    position: relative;
+} 
+
+.prev-btn, .next-btn{
+    width: 32px; 
+    height: auto; 
+    position: absolute; 
+    top: 34%;
+    opacity: 0.7;
+    cursor: pointer;
+} 
+
+.prev-btn{
+    left: -15px;
+} 
+
+.next-btn{
+    right: -15px;
+} 
+
+.pantry-items-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.count-selector{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border-style:2px solid black ;
+    text-align: center;
+    border: black;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+} 
+
+.sorry-background{
+    width: 620px; 
+    height: auto;
+}
+
+.sorry-container{
+    margin: 20px auto 0px auto;
+    text-align: center;
+}
+.sorry-text{
+    font-size: 18px;
+}
+
+.search-input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.search-result-carousel{ 
+    margin: 50px 0px 50px 0px;
+    display: flex; 
+    flex-direction: row;
+    column-gap: 50px;
+    justify-content: center;
+}
+
+.search-result-heading{
+    font-size: 20px;
+    margin: 30px;
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <title>THE PERFECT PANTRY | PROFILE</title>
+</head>
+<body>
+    <div class="homepage"> 
+        <div class="categories">
+            <div class="app-details"> 
+                <div class="app-logo"><img class="logo-img" src="./assets/general-images/logo.png"></div> 
+                <div class="app-name">The Perfect Pantry</div>
+            </div> 
+            <div id="fav-section-btn" class="category-title">Favourites/<br>Past Orders</div> 
+            <div class="back-home"> 
+                <form action="/">
+                    <button class="home-btn" type="submit">Back To Home</button> 
+                </form>
+            </div>
+            <div class="logout-btn"> 
+                <form action="/logout" method="POST">
+                    <button class="logout" type="submit">Logout</button> 
+                </form>
+            </div>
+        </div>
+        <div class="display-container"> 
+            <div class="options-tab"> 
+                <div class="profile-heading">Your Profile</div>
+                <div class="cart"> 
+                    <a href="/cart"><img class="cart-img" src="./assets/general-images/shopping-cart.png" alt="cart-option"></a>
+                </div>
+                <div class="profile">
+                    <a href="/profile"><img class="profile-img" src="./assets/general-images/account.png" alt="profile-option"></a>
+                </div>
+            </div> 
+            <div class="profile-content"> 
+                <div class="name-field"> 
+                    <div class="name-title">Name</div>
+                    <div id="name" class="name">SteveRogers</div>
+                    <div class="name-edit">
+                        <button id="name-edit-btn" class="name-edit-btn">Change Name</button>
+                    </div>
+                </div>
+                <div class="email-field"> 
+                    <div class="email-title">Email</div>
+                    <div id="email" class="email" contenteditable="false">Steve@gmail.com</div>
+                </div>
+                <div class="password-field"> 
+                    <div class="password-title">Password</div>
+                    <div id="password" class="password">......</div>
+                    <div class="password-edit">
+                        <button id='password-change-btn' class="password-edit-btn">Change Password</button>
+                    </div>
+                </div>  
+                <div class="address-field"> 
+                    <div class="address-title">Address for Delivery</div>
+                    <div id="address" class="address">No.20, Washington Street, Virginia, USA - 71</div>
+                    <div class="address-edit">
+                        <button id='address-change-btn' class="address-edit-btn">Change Address</button>
+                    </div>
+                </div> 
+                <div class="save-btn"> 
+                    <button id='save-change-btn' class="save-change-btn">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/profile.js"></script>
+</body>
+</html>

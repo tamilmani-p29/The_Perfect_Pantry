@@ -1,0 +1,244 @@
+@import "reset.css"; 
+
+*{
+    font-family: 'Righteous', cursive;
+} 
+
+body{
+    background-color:#2A9187;
+    height: 70vh;
+
+}
+.homepage{
+    margin: 24px; 
+    background-color: #ffffff; 
+    border-radius: 50px;
+    display: grid; 
+    grid-template-columns: 12% 88%;
+} 
+
+.app-details{
+    display: grid; 
+    grid-template-columns: 20% 80%; 
+    margin-top: 40px;
+} 
+
+.app-name{
+    font-size: 16px;
+    margin-left: 20px;
+}
+.logo-img{
+    width: 32px; 
+    height: auto;
+} 
+
+.display-container{
+    background-color: #f3f3f3; 
+    margin: 20px;
+    padding: 16px;
+    border-radius: 28px;
+} 
+
+.cart-img, .profile-img{
+    width: 40px; 
+    height: auto;
+    cursor: pointer;
+}
+
+.options-tab{
+    display: grid; 
+    grid-template-columns: 1fr 48px 48px;
+    margin-bottom: 12px;
+} 
+
+input{
+    width: 94%; 
+    height: 32px;
+    border-radius: 14px;
+    border-style: hidden;
+    padding-left: 20px;
+    font-size: 18px;
+    background-color: #EAEAEA;
+    border: 1px solid #124544;
+    outline: none;
+} 
+
+.cart-heading{
+    margin-bottom: 12px;
+    font-size: 22px; 
+    margin-left: 10px;
+} 
+
+.logout, .home-btn, .buy-btn{
+    background-color: #6ED7D3;
+    border-style: hidden;
+    padding: 14px; 
+    width: 120px; 
+    border-radius: 20px;
+    margin-left: 16px; 
+    font-size: 16px;
+    cursor: pointer;
+} 
+
+.buy-btn{
+    background-color: #124544;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: -10px;
+    margin-right: 20px;
+}
+.logout{
+    margin-top: 60px;
+}
+.home-btn{
+    padding: 8px;
+    margin-top: 120px;
+    margin-bottom: -90px;
+}
+
+.home-btn:hover{
+    box-shadow: 2px 4px 2px #9b9b9b;
+}
+.logout:hover{
+    box-shadow: 2px 4px 2px #bcbdbd;
+}
+.cart-add{
+    cursor: pointer;
+    padding:8px; 
+    background-color: #124544;
+    border-style: hidden;
+    border-radius: 12px;
+    color: white;
+    align-self: end;
+} 
+
+.search-icon{
+    width: 30px; 
+    height: auto; 
+    position: absolute; 
+    top: 3px; 
+    right: 46px;
+    cursor: pointer;
+} 
+
+.search-bar{
+    position: relative;
+} 
+
+.prev-btn, .next-btn{
+    width: 32px; 
+    height: auto; 
+    position: absolute; 
+    top: 34%;
+    opacity: 0.7;
+    cursor: pointer;
+} 
+
+.prev-btn{
+    left: -15px;
+} 
+
+.next-btn{
+    right: -15px;
+}  
+
+.cart-cols, .cart-item{
+    display: flex;  
+    justify-content: space-around; 
+    flex-direction: row;
+    font-size: 18px; 
+    width: 98%; 
+    padding: 10px;
+}  
+
+.cart-cols{
+    margin-bottom: 10px;
+}
+.cart-item{
+    background-color: #6ED7D3; 
+    border-radius: 20px;
+}
+
+.cart-items{
+    min-height: 340px; 
+    max-height: 340px;
+    overflow-y: auto;
+    display: flex; 
+    flex-direction: column; 
+    row-gap: 20px;
+}  
+
+.total-container{
+    display: flex;  
+    justify-content: flex-end; 
+    column-gap: 30px; 
+    font-size: 20px;
+    margin-top: 30px;
+}  
+
+.product-img{
+    width: 160px; 
+    height: auto; 
+    margin-top: 100px;
+} 
+
+
+.left-options{
+    display: flex; 
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.buy-container {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  border-radius: 20px;
+  
+}
+
+/* Modal Content/Box */
+.buy-result-container {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+  border-radius: 20px;
+  text-align: center;
+ 
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+.purchase-success{
+    width: 600px; 
+    height: auto;
+    text-align: center;
+}
+
+.buy-success-msg{
+    font-size: 20px; 
+    text-align: center;
+    margin: 20px;
+}
