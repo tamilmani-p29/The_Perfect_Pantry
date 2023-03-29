@@ -6,6 +6,8 @@ let buyButton = document.querySelector("#buy-btn");
 let buyContainer = document.querySelector("#buy-container");
 let closeButton = document.querySelector("#close-btn");
 let removeButton = document.querySelector("#remove");
+let cartItem = document.querySelector("#cart-item");
+let appDetails = document.querySelector("#app-details");
 
 let cartItems;
 let currentMail;
@@ -29,6 +31,7 @@ let removedItems = [];
         });
     });
 })();
+
 
 buyButton.addEventListener("click", function () {
   buyContainer.style.display = "block";
@@ -82,11 +85,11 @@ function displayCartItems() {
       for (let grocery in displayItems) {
         if (grocery !== "undefined") {
           totalPrice += displayItems[grocery].price;
-          items += `<div class="cart-item">
+          items += `<div id="cart-item" class="cart-item">
                               <div class="product-name">${grocery}</div>
                               <div class="quantity">${displayItems[grocery].quantity}</div>
                               <div class="price">${displayItems[grocery].price}</div>
-                              <span title="Remove from Cart" id="remove" class="close-${groceryIndex}" onclick="removeElement(this)">&times;</span>
+                              <span title="Remove from Cart" id="remove" class="close-${groceryIndex} close-popup" onclick="removeElement(this)">&times;</span>
                             </div>`;
           groceryIndex++;
         }
@@ -96,17 +99,31 @@ function displayCartItems() {
     }
   }
   if (items === "") {
-    cartPage.innerHTML = "Your Cart seems to be empty";
+    cartPage.innerHTML = `<div class='cart-empty-container'>
+                            <div class="cart-empty-text">Your Cart Seems to be Empty</div>
+                            <div class="cart-empty-img"><img class='empty-background' src="../assets/general-images/emptycart.png" alt='empty-card-image'></div>
+                          </div>`;
   } else {
     cartContainer.innerHTML = items;
+document
+  .querySelector("#cart-items")
+  .addEventListener("click", function (event) {
+    console.log(
+      "the clicked item is",
+      event.target.parentElement.parentElement
+    );
+  });
   }
   totalValue.innerHTML = totalPrice;
   console.log(currentMail);
+
 }
 
 function removeElement(event) {
   console.log(event.parentNode);
   console.log("clicked item", event.parentNode.children[0].innerHTML);
+  console.log('the reduced price is', event.parentNode.children[2].innerHTML)
+  totalValue.innerHTML -= event.parentNode.children[2].innerHTML;
   event.parentNode.remove();
   fetch("/removeElementsFromCart", {
     method: "POST",
@@ -119,3 +136,7 @@ function removeElement(event) {
     }),
   });
 }
+
+appDetails.addEventListener("click", function () {
+  window.location.href = "/";
+});

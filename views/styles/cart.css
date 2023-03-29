@@ -21,6 +21,7 @@ body{
     display: grid; 
     grid-template-columns: 20% 80%; 
     margin-top: 40px;
+    cursor: pointer;
 } 
 
 .app-name{
@@ -48,7 +49,7 @@ body{
 .options-tab{
     display: grid; 
     grid-template-columns: 1fr 48px 48px;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
 } 
 
 input{
@@ -143,7 +144,7 @@ input{
     right: -15px;
 }  
 
-.cart-cols, .cart-item{
+.cart-cols{
     display: flex;  
     justify-content: space-around; 
     flex-direction: row;
@@ -154,13 +155,33 @@ input{
 
 .cart-item{
     position: relative;
+    display: grid; 
+    grid-template-columns: 50% 30% 20%;
+    background-color: #6ED7D3; 
+    border-radius: 20px;
+    padding: 16px;
+}
+
+.product-name{
+    margin-left: 60px;
+}
+
+.product-name-title{
+    margin-left: -120px;
+}
+
+.quantity-title{
+    margin-right: -70px;
+}
+.price{
+    margin-left: 30px;
+}
+
+.price-title{
+    margin-right: -30px;
 }
 .cart-cols{
     margin-bottom: 10px;
-}
-.cart-item{
-    background-color: #6ED7D3; 
-    border-radius: 20px;
 }
 
 .cart-items{
@@ -250,6 +271,23 @@ input{
     position: absolute;
     right: 20px;
     color: black;
-    bottom: 4px;
-    cursor: pointer;
+    bottom: 8px;
+    cursor: pointer; 
+    font-size: 32px;
+}
+
+.empty-background{
+    width: 440px; 
+    height: auto;
+}
+
+.cart-emtpy-container{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cart-title{
+    font-size: 24px;
+    margin-left: 30px;
+    margin-top: 6px;
 }

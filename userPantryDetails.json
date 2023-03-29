@@ -1,12 +1,22 @@
 [
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {}
+  {
+    "currentUserMail": "steve@gmail.com",
+    "groceryDetails": [
+
+      {
+        "name": "papaya",
+        "stockleft": "19",
+        "totalstock": "35",
+        "price": "30",
+        "quantity": "1"
+      },
+      {
+        "name": "bananachips",
+        "stockleft": "60",
+        "totalstock": "84",
+        "price": "40",
+        "quantity": "1"
+      }
+    ]
+  }
 ]

@@ -21,6 +21,7 @@ body{
     display: grid; 
     grid-template-columns: 20% 80%; 
     margin-top: 16px;
+    cursor: pointer;
 } 
 
 .app-name{
@@ -219,10 +220,11 @@ input[type=number]::-webkit-inner-spin-button {
 .sorry-background{
     width: 620px; 
     height: auto;
+    margin: 0 auto;
 }
 
 .sorry-container{
-    margin: 20px auto 0px auto;
+    margin: 12px auto 0px auto;
     text-align: center;
 }
 .sorry-text{
@@ -244,5 +246,14 @@ input[type=number]::-webkit-inner-spin-button {
 .search-result-heading{
     font-size: 20px;
     margin: 30px;
+}
+
+.out-of-stock-grocery{
+    opacity: 0.6;
+}
+
+.search-container{
+    display: flex;  
+    column-gap: 30px;
 }
 

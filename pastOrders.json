@@ -582,5 +582,86 @@
         "quantity": 2
       }
     }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 600,
+        "quantity": 5
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 600,
+        "quantity": 5
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "banana": {
+        "price": 480,
+        "quantity": 16
+      },
+      "grapes": {
+        "price": 2040,
+        "quantity": 34
+      },
+      "jackfruit": {
+        "price": 5100,
+        "quantity": 52
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "brinjal": {
+        "price": 30,
+        "quantity": 4
+      },
+      "bread": {
+        "price": 25,
+        "quantity": 1
+      },
+      "croissant": {
+        "price": 400,
+        "quantity": 4
+      },
+      "banana": {
+        "price": 30,
+        "quantity": 2
+      },
+      "beetroot": {
+        "price": 25,
+        "quantity": 1
+      },
+      "papaya": {
+        "price": 30,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "undefined": {
+        "price": null,
+        "quantity": null
+      },
+      "ghee": {
+        "price": 50,
+        "quantity": 1
+      },
+      "banana": {
+        "price": 60,
+        "quantity": 2
+      }
+    }
   }
 ]

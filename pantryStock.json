@@ -2,25 +2,25 @@
   "fruits": [
     {
       "name": "apple",
-      "stockleft": "10",
+      "stockleft": "0",
       "totalstock": "12",
       "price": "120"
     },
     {
       "name": "banana",
-      "stockleft": "20",
+      "stockleft": "0",
       "totalstock": "25",
       "price": "30"
     },
     {
       "name": "grapes",
-      "stockleft": "20",
+      "stockleft": "-14",
       "totalstock": "30",
       "price": "60"
     },
     {
       "name": "jackfruit",
-      "stockleft": "8",
+      "stockleft": "-44",
       "totalstock": "12",
       "price": "100"
     },
@@ -32,7 +32,7 @@
     },
     {
       "name": "papaya",
-      "stockleft": "20",
+      "stockleft": "19",
       "totalstock": "35",
       "price": "30"
     },
@@ -64,13 +64,13 @@
   "vegetables": [
     {
       "name": "beetroot",
-      "stockleft": "60",
+      "stockleft": "59",
       "totalstock": "84",
       "price": "25"
     },
     {
       "name": "brinjal",
-      "stockleft": "70",
+      "stockleft": "66",
       "totalstock": "87",
       "price": "15"
     },
@@ -150,7 +150,7 @@
     },
     {
       "name": "ghee",
-      "stockleft": "32",
+      "stockleft": "31",
       "totalstock": "40",
       "price": "50"
     },
@@ -250,7 +250,7 @@
   "pasteries": [
     {
       "name": "bread",
-      "stockleft": "70",
+      "stockleft": "69",
       "totalstock": "94",
       "price": "25"
     },
@@ -268,7 +268,7 @@
     },
     {
       "name": "croissant",
-      "stockleft": "80",
+      "stockleft": "76",
       "totalstock": "92",
       "price": "100"
     },

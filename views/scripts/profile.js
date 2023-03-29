@@ -10,6 +10,7 @@ let passwordChangeButton = document.querySelector("#password-change-btn");
 let addressChangeButton = document.querySelector("#address-change-btn");
 let saveButton = document.querySelector("#save-change-btn");
 let favSectionButton = document.querySelector("#fav-section-btn");
+let appDetails = document.querySelector("#app-details");
 
 (function () {
   fetch("/getAllUserData")
@@ -78,3 +79,7 @@ function updateName() {
   userName.contentEditable = "true";
   saveButton.addEventListener("click");
 }
+
+appDetails.addEventListener("click", function () {
+  window.location.href = "/";
+});
