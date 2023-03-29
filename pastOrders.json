@@ -1,374 +1,462 @@
-{
-  "0": {
-    "currentUserMail": "tam@gmail.com",
-    "orders": [
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      }
-    ]
-  },
-  "1": {
-    "currentUserMail": "steve@gmail.com",
-    "orders": [
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "watermelon",
-        "stockleft": "60",
-        "totalstock": "80",
-        "price": "40",
-        "quantity": "1"
-      },
-      {
-        "name": "pomegranate",
-        "stockleft": "30",
-        "totalstock": "65",
-        "price": "100",
-        "quantity": "1"
-      },
-      {
-        "name": "peer",
-        "stockleft": "40",
-        "totalstock": "55",
-        "price": "70",
-        "quantity": "1"
-      },
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "grapes",
-        "stockleft": "20",
-        "totalstock": "30",
-        "price": "60",
-        "quantity": "1"
-      },
-      {
-        "name": "strawberry",
-        "stockleft": "8",
-        "totalstock": "14",
-        "price": "200",
-        "quantity": "1"
-      },
-      {
-        "name": "strawberry",
-        "stockleft": "8",
-        "totalstock": "14",
-        "price": "200",
-        "quantity": "1"
-      },
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "2"
-      },
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "banana",
-        "stockleft": "20",
-        "totalstock": "25",
-        "price": "30",
-        "quantity": "1"
-      },
-      {
-        "name": "grapes",
-        "stockleft": "20",
-        "totalstock": "30",
-        "price": "60",
-        "quantity": "1"
-      },
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "banana",
-        "stockleft": "20",
-        "totalstock": "25",
-        "price": "30",
-        "quantity": "1"
-      },
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "grapes",
-        "stockleft": "20",
-        "totalstock": "30",
-        "price": "60",
-        "quantity": "2"
-      },
-      {
-        "name": "grapes",
-        "stockleft": "20",
-        "totalstock": "30",
-        "price": "60",
-        "quantity": "6"
-      },
-      {
-        "name": "grapes",
-        "stockleft": "20",
-        "totalstock": "30",
-        "price": "60",
-        "quantity": "5"
-      },
-      {
-        "name": "grapes",
-        "stockleft": "20",
-        "totalstock": "30",
-        "price": "60",
-        "quantity": "6"
-      },
-      {
-        "name": "grapes",
-        "stockleft": "20",
-        "totalstock": "30",
-        "price": "60",
-        "quantity": "7"
-      },
-      {
-        "name": "grapes",
-        "stockleft": "20",
-        "totalstock": "30",
-        "price": "60",
-        "quantity": "8"
-      },
-      {
-        "name": "grapes",
-        "stockleft": "20",
-        "totalstock": "30",
-        "price": "60",
-        "quantity": "9"
-      },
-      {
-        "name": "grapes",
-        "stockleft": "20",
-        "totalstock": "30",
-        "price": "60",
-        "quantity": "10"
-      },
-      {
-        "name": "banana",
-        "stockleft": "20",
-        "totalstock": "25",
-        "price": "30",
-        "quantity": "1"
-      },
-      {
-        "name": "banana",
-        "stockleft": "20",
-        "totalstock": "25",
-        "price": "30",
-        "quantity": "1"
-      },
-      {
-        "name": "banana",
-        "stockleft": "20",
-        "totalstock": "25",
-        "price": "30",
-        "quantity": "5"
-      },
-      {
-        "name": "chocolatecake",
-        "stockleft": "54",
-        "totalstock": "76",
-        "price": "60",
-        "quantity": "1"
-      },
-      {
-        "name": "burger",
-        "stockleft": "70",
-        "totalstock": "87",
-        "price": "60",
-        "quantity": "1"
-      }
-    ]
-  },
-  "currentMail": {
+[
+  {
     "currentUserMail": "ara@gmail.com",
-    "orders": [
-      {
-        "name": "pomegranate",
-        "stockleft": "30",
-        "totalstock": "65",
-        "price": "100",
-        "quantity": "1"
+    "orders": {
+      "apple": {
+        "price": 1200,
+        "quantity": 10
       },
-      {
-        "name": "pomegranate",
-        "stockleft": "30",
-        "totalstock": "65",
-        "price": "100",
-        "quantity": "1"
+      "grapes": {
+        "price": 240,
+        "quantity": 4
       },
-      {
-        "name": "grapes",
-        "stockleft": "20",
-        "totalstock": "30",
-        "price": "60",
-        "quantity": "1"
+      "beer": {
+        "price": 1000,
+        "quantity": 4
       },
-      {
-        "name": "beer",
-        "stockleft": "60",
-        "totalstock": "104",
-        "price": "250",
-        "quantity": "1"
+      "bananachips": {
+        "price": 360,
+        "quantity": 9
       },
-      {
-        "name": "panneer",
-        "stockleft": "88",
-        "totalstock": "95",
-        "price": "60",
-        "quantity": "1"
+      "banana": {
+        "price": 180,
+        "quantity": 6
       },
-      {
-        "name": "pomegranate",
-        "stockleft": "30",
-        "totalstock": "65",
-        "price": "100",
-        "quantity": "1"
+      "coffee": {
+        "price": 30,
+        "quantity": 2
       },
-      {
-        "name": "pomegranate",
-        "stockleft": "30",
-        "totalstock": "65",
-        "price": "100",
-        "quantity": "1"
+      "greentea": {
+        "price": 30,
+        "quantity": 1
       },
-      {
-        "name": "grapes",
-        "stockleft": "20",
-        "totalstock": "30",
-        "price": "60",
-        "quantity": "1"
+      "burger": {
+        "price": 240,
+        "quantity": 4
       },
-      {
-        "name": "beer",
-        "stockleft": "60",
-        "totalstock": "104",
-        "price": "250",
-        "quantity": "1"
+      "brinjal": {
+        "price": 45,
+        "quantity": 3
       },
-      {
-        "name": "panneer",
-        "stockleft": "88",
-        "totalstock": "95",
-        "price": "60",
-        "quantity": "1"
+      "cheese": {
+        "price": 900,
+        "quantity": 3
       },
-      {
-        "name": "pomegranate",
-        "stockleft": "30",
-        "totalstock": "65",
-        "price": "100",
-        "quantity": "1"
+      "beetroot": {
+        "price": 75,
+        "quantity": 3
       },
-      {
-        "name": "pomegranate",
-        "stockleft": "30",
-        "totalstock": "65",
-        "price": "100",
-        "quantity": "1"
+      "papaya": {
+        "price": 60,
+        "quantity": 2
       },
-      {
-        "name": "grapes",
-        "stockleft": "20",
-        "totalstock": "30",
-        "price": "60",
-        "quantity": "1"
-      },
-      {
-        "name": "beer",
-        "stockleft": "60",
-        "totalstock": "104",
-        "price": "250",
-        "quantity": "1"
-      },
-      {
-        "name": "panneer",
-        "stockleft": "88",
-        "totalstock": "95",
-        "price": "60",
-        "quantity": "1"
-      },
-      {
-        "name": "peer",
-        "stockleft": "40",
-        "totalstock": "55",
-        "price": "70",
-        "quantity": "1"
+      "jackfruit": {
+        "price": 100,
+        "quantity": 1
       }
-    ]
+    }
+  },
+  {
+    "currentUserMail": "ara@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 1200,
+        "quantity": 10
+      },
+      "grapes": {
+        "price": 240,
+        "quantity": 4
+      },
+      "beer": {
+        "price": 1000,
+        "quantity": 4
+      },
+      "bananachips": {
+        "price": 360,
+        "quantity": 9
+      },
+      "banana": {
+        "price": 180,
+        "quantity": 6
+      },
+      "coffee": {
+        "price": 30,
+        "quantity": 2
+      },
+      "greentea": {
+        "price": 30,
+        "quantity": 1
+      },
+      "burger": {
+        "price": 240,
+        "quantity": 4
+      },
+      "brinjal": {
+        "price": 45,
+        "quantity": 3
+      },
+      "cheese": {
+        "price": 900,
+        "quantity": 3
+      },
+      "beetroot": {
+        "price": 75,
+        "quantity": 3
+      },
+      "papaya": {
+        "price": 60,
+        "quantity": 2
+      },
+      "jackfruit": {
+        "price": 100,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "ara@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 1200,
+        "quantity": 10
+      },
+      "grapes": {
+        "price": 240,
+        "quantity": 4
+      },
+      "beer": {
+        "price": 1000,
+        "quantity": 4
+      },
+      "bananachips": {
+        "price": 360,
+        "quantity": 9
+      },
+      "banana": {
+        "price": 210,
+        "quantity": 7
+      },
+      "coffee": {
+        "price": 30,
+        "quantity": 2
+      },
+      "greentea": {
+        "price": 30,
+        "quantity": 1
+      },
+      "burger": {
+        "price": 240,
+        "quantity": 4
+      },
+      "brinjal": {
+        "price": 45,
+        "quantity": 3
+      },
+      "cheese": {
+        "price": 900,
+        "quantity": 3
+      },
+      "beetroot": {
+        "price": 75,
+        "quantity": 3
+      },
+      "papaya": {
+        "price": 60,
+        "quantity": 2
+      },
+      "jackfruit": {
+        "price": 100,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "ara@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 360,
+        "quantity": 3
+      }
+    }
+  },
+  {
+    "currentUserMail": "ara@gmail.com",
+    "orders": {
+      "orange": {
+        "price": 80,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "ara@gmail.com",
+    "orders": {
+      "orange": {
+        "price": 80,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "ara@gmail.com",
+    "orders": {
+      "peer": {
+        "price": 70,
+        "quantity": 1
+      },
+      "pomegranate": {
+        "price": 100,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "ara@gmail.com",
+    "orders": {
+      "banana": {
+        "price": 30,
+        "quantity": 1
+      },
+      "apple": {
+        "price": 120,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "ara@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 120,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 120,
+        "quantity": 1
+      },
+      "beetroot": {
+        "price": 25,
+        "quantity": 1
+      },
+      "bread": {
+        "price": 25,
+        "quantity": 1
+      },
+      "beer": {
+        "price": 250,
+        "quantity": 1
+      },
+      "butter": {
+        "price": 250,
+        "quantity": 1
+      },
+      "bananachips": {
+        "price": 40,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 120,
+        "quantity": 1
+      },
+      "grapes": {
+        "price": 60,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 120,
+        "quantity": 1
+      },
+      "grapes": {
+        "price": 60,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 120,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 120,
+        "quantity": 1
+      },
+      "banana": {
+        "price": 30,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 240,
+        "quantity": 2
+      },
+      "banana": {
+        "price": 30,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 120,
+        "quantity": 1
+      },
+      "banana": {
+        "price": 30,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 360,
+        "quantity": 3
+      },
+      "banana": {
+        "price": 60,
+        "quantity": 2
+      },
+      "beetroot": {
+        "price": 25,
+        "quantity": 1
+      },
+      "bread": {
+        "price": 25,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "undefined": {
+        "price": null,
+        "quantity": null
+      },
+      "papaya": {
+        "price": 30,
+        "quantity": 1
+      },
+      "peer": {
+        "price": 70,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "banana": {
+        "price": 30,
+        "quantity": 1
+      },
+      "grapes": {
+        "price": 60,
+        "quantity": 1
+      },
+      "jackfruit": {
+        "price": 100,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 240,
+        "quantity": 2
+      },
+      "grapes": {
+        "price": 60,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 120,
+        "quantity": 1
+      },
+      "grapes": {
+        "price": 60,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 120,
+        "quantity": 1
+      },
+      "grapes": {
+        "price": 60,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "jackfruit": {
+        "price": 200,
+        "quantity": 2
+      },
+      "papaya": {
+        "price": 30,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "steve@gmail.com",
+    "orders": {
+      "grapes": {
+        "price": 60,
+        "quantity": 1
+      },
+      "orange": {
+        "price": 80,
+        "quantity": 1
+      },
+      "greentea": {
+        "price": 30,
+        "quantity": 1
+      }
+    }
   }
-}
+]

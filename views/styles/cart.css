@@ -152,6 +152,9 @@ input{
     padding: 10px;
 }  
 
+.cart-item{
+    position: relative;
+}
 .cart-cols{
     margin-bottom: 10px;
 }
@@ -241,4 +244,12 @@ input{
     font-size: 20px; 
     text-align: center;
     margin: 20px;
+}
+
+.close-popup{
+    position: absolute;
+    right: 20px;
+    color: black;
+    bottom: 4px;
+    cursor: pointer;
 }

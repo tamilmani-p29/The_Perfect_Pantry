@@ -1,95 +1,19 @@
 [
+  {},
   {
-    "currentUserMail": "ara@gmail.com",
+    "currentUserMail": "steve@gmail.com",
     "groceryDetails": [
       {
-        "name": "papaya",
+        "name": "apple",
+        "stockleft": "10",
+        "totalstock": "12",
+        "price": "120",
+        "quantity": "1"
+      },
+      {
+        "name": "grapes",
         "stockleft": "20",
-        "totalstock": "35",
-        "price": "30",
-        "quantity": "1"
-      },
-      {
-        "name": "papaya",
-        "stockleft": "20",
-        "totalstock": "35",
-        "price": "30",
-        "quantity": "1"
-      },
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "peer",
-        "stockleft": "40",
-        "totalstock": "55",
-        "price": "70",
-        "quantity": "1"
-      },
-      {
-        "name": "watermelon",
-        "stockleft": "60",
-        "totalstock": "80",
-        "price": "40",
-        "quantity": "1"
-      },
-      {
-        "name": "pomegranate",
-        "stockleft": "30",
-        "totalstock": "65",
-        "price": "100",
-        "quantity": "1"
-      },
-      {
-        "name": "pomegranate",
-        "stockleft": "30",
-        "totalstock": "65",
-        "price": "100",
-        "quantity": "1"
-      },
-      {
-        "name": "banana",
-        "stockleft": "20",
-        "totalstock": "25",
-        "price": "30",
-        "quantity": "1"
-      },
-      {
-        "name": "peer",
-        "stockleft": "40",
-        "totalstock": "55",
-        "price": "70",
-        "quantity": "1"
-      },
-      {
-        "name": "panneer",
-        "stockleft": "88",
-        "totalstock": "95",
+        "totalstock": "30",
         "price": "60",
         "quantity": "1"
       }

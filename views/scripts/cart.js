@@ -5,17 +5,20 @@ let totalValue = document.querySelector("#total-value");
 let buyButton = document.querySelector("#buy-btn");
 let buyContainer = document.querySelector("#buy-container");
 let closeButton = document.querySelector("#close-btn");
+let removeButton = document.querySelector("#remove");
 
 let cartItems;
 let currentMail;
 let orderedItems = [];
+let removedItems = [];
 
 (function () {
   console.log("getusercart");
   fetch("/getUserCartItems")
     .then((response) => response.json())
     .then((data) => {
-      cartItems = data;
+      cartItemsNotFiltered = data;
+      cartItems = cartItemsNotFiltered.filter((elem) => elem);
       fetch("/getCurrentUserMail")
         .then((response) => response.json())
         .then((data) => {
@@ -33,68 +36,62 @@ buyButton.addEventListener("click", function () {
 
 closeButton.addEventListener("click", function () {
   buyContainer.style.display = "none";
-  // fetch("/getPastOrders")
-  //   .then((data) => data.json())
-  //   .then((result) => {
-  //     let newCartArr = [];
-  //     let oldCartItems = result;
-  //     console.log(result);
-  //     for (let i = 0; i < cartItems.length; i++) {
-  //       if (cartItems[i].currentUserMail === currentMail) {
-  //         for (let j = 0; j < cartItems[i].groceryDetails.length; j++) {
-  //           console.log(cartItems[i].groceryDetails[j]);
-  //           newCartArr.push(cartItems[i].groceryDetails[j]);
-  //         }
-  //       }
-  //     }
-  //     let userAlreadyExists = false;
-  //     for (let key in oldCartItems) {
-  //       if(oldCartItems[key].currentUserMail === currentMail){
-  //         userAlreadyExists = true;
-  //         oldCartItems[key].orders.concat(newCartArr);
-  //         // for( let i=0; i<newCartArr.length; i++){
-  //         //   oldCartItems[key].orders.push(newCartArr[i]);
-  //         // }
-  //       }
-  //     }
-  //     if (!userAlreadyExists) {
-  //       oldCartItems.currentMail= {currentUserMail: currentMail, orders: newCartArr};
-  //     }
-  //     console.log(oldCartItems);
-  //     fetch("/sendPastorders", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json; charset=UTF-8",
-  //       },
-  //       body: JSON.stringify({
-  //         ...oldCartItems,
-  //       }),
-  //     });
-  //   });
+  let myOrders = {};
+  myOrders.currentUserMail = currentMail;
+  myOrders.orders = displayItems;
+  fetch("/sendCartorders", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json; charset=UTF-8",
+    },
+    body: JSON.stringify({
+      ...myOrders,
+    }),
+  });
+  cartPage.innerHTML = "Your Cart seems to be empty";
 });
 
+let displayItems = {};
 function displayCartItems() {
+  console.log("user mail is", currentMail);
   let items = "";
   let totalPrice = 0;
   console.log(cartItems);
   for (let i = 0; i < cartItems.length; i++) {
-    for (let j = 0; j < cartItems[i].groceryDetails.length; j++) {
-      if (cartItems[i].currentUserMail == currentMail) {
-        totalPrice +=
-          cartItems[i].groceryDetails[j].price *
-          cartItems[i].groceryDetails[j].quantity;
-        items += `<div class="cart-item">
-                            <div class="product-name">${
-                              cartItems[i].groceryDetails[j].name
-                            }</div>
-                            <div class="quantity">${
-                              cartItems[i].groceryDetails[j].quantity
-                            }</div>
-                            <div class="price">${
-                              cartItems[i].groceryDetails[j].price *
-                              cartItems[i].groceryDetails[j].quantity
-                            }</div>
-                          </div>`;
+    if (cartItems[i] !== null && cartItems[i].currentUserMail === currentMail) {
+      let currGrocery = cartItems[i].groceryDetails;
+      if (currGrocery !== null) {
+        for (let val of currGrocery) {
+          if (displayItems[val.name] == undefined) {
+            displayItems[val.name] = {
+              price: parseInt(val.price),
+              quantity: parseInt(val.quantity),
+            };
+            console.log(displayItems[val.name]);
+          } else {
+            displayItems[val.name].price +=
+              parseInt(val.price) * parseInt(val.quantity);
+            displayItems[val.name].quantity += parseInt(val.quantity);
+          }
+        }
+      }
+    }
+    console.log("displayitems", displayItems);
+    let groceryIndex = 0;
+    if (displayItems !== undefined) {
+      for (let grocery in displayItems) {
+        if (grocery !== "undefined") {
+          totalPrice += displayItems[grocery].price;
+          items += `<div class="cart-item">
+                              <div class="product-name">${grocery}</div>
+                              <div class="quantity">${displayItems[grocery].quantity}</div>
+                              <div class="price">${displayItems[grocery].price}</div>
+                              <span title="Remove from Cart" id="remove" class="close-${groceryIndex}" onclick="removeElement(this)">&times;</span>
+                            </div>`;
+          groceryIndex++;
+        }
+
+        console.log(displayItems);
       }
     }
   }
@@ -103,6 +100,22 @@ function displayCartItems() {
   } else {
     cartContainer.innerHTML = items;
   }
-  totalValue.innerHTML = totalPrice; 
+  totalValue.innerHTML = totalPrice;
   console.log(currentMail);
+}
+
+function removeElement(event) {
+  console.log(event.parentNode);
+  console.log("clicked item", event.parentNode.children[0].innerHTML);
+  event.parentNode.remove();
+  fetch("/removeElementsFromCart", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json; charset=UTF-8",
+    },
+    body: JSON.stringify({
+      currentMail: currentMail,
+      removeElement: event.parentNode.children[0].innerHTML,
+    }),
+  });
 }

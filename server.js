@@ -102,32 +102,99 @@ app.get("/getAllUserData", function (req, res) {
 
 app.get("/getCurrentUserMail", function (req, res) {
   console.log(currentEmail);
-  res.json({email: currentEmail});
+  res.json({ email: currentEmail });
 });
 
-app.get("/getPastOrders", function (req, res) {
+app.post("/removeElementsFromCart", function (req, res) {
+  const itemToRemove = req.body.removeElement;
+  const currentUserMail = req.body.currentMail;
+  console.log("item to be removed is ", itemToRemove);
+  fs.readFile("userPantryDetails.json", function (err, data) {
+    if (err) {
+      console.log(err);
+    } else {
+      let userCartItems = JSON.parse(data);
+      console.log("user cart items for removing elements are ", userCartItems);
+      for (let i = 0; i < userCartItems.length; i++) {
+        if (
+          userCartItems[i] !== null &&
+          userCartItems[i].currentUserMail === currentUserMail
+        ) {
+          console.log("checking mail");
+          let emptyObjectCount = 0;
+          for (let j = 0; j < userCartItems[i].groceryDetails.length; j++) {
+            if (userCartItems[i].groceryDetails[j].name === itemToRemove) {
+              userCartItems[i].groceryDetails[j] = {};
+              emptyObjectCount++;
+            }
+          }
+          if (userCartItems[i].groceryDetails.length === emptyObjectCount) {
+            userCartItems[i] = {};
+          }
+        }
+      }
+      fs.writeFile(
+        "userPantryDetails.json",
+        JSON.stringify(userCartItems, null, 2),
+        (err) => {
+          if (err) console.log(err);
+          else {
+            console.log("data deleted successfully");
+          }
+        }
+      );
+    }
+  });
+});
+app.post("/sendCartOrders", function (req, res) {
+  let currentCartOrders = req.body;
+  console.log("current cart orders", currentCartOrders);
   fs.readFile("pastOrders.json", function (err, data) {
     if (err) {
       console.log(err);
     } else {
-      res.json(JSON.parse(data));
+      let oldOrderObj = JSON.parse(data);
+      oldOrderObj.push(currentCartOrders);
+      fs.writeFile(
+        "pastOrders.json",
+        JSON.stringify(oldOrderObj, null, 2),
+        (err) => {
+          if (err) console.log(err);
+          else {
+            console.log("File written successfully");
+          }
+        }
+      );
     }
   });
-});
+  fs.readFile("userPantryDetails.json", function (err, data) {
+    if (err) {
+      console.log(err);
+    } else {
+      let cartPageItems = JSON.parse(data);
+      for (let i = 0; i < cartPageItems.length; i++) {
+        if (
+          cartPageItems[i] !== null &&
+          cartPageItems[i].currentUserMail === currentEmail
+        ) {
+          cartPageItems[i] = {};
 
-app.post("/sendPastOrders", function (req, res) {
-  let newOrders = req.body;
-  fs.writeFile(
-    "pastOrders.json",
-    JSON.stringify(newOrders, null, 2),
-    (err) => {
-      if (err) console.log(err);
-      else {
-        console.log("File written successfully");
+          console.log(cartPageItems);
+          break;
+        }
       }
+      fs.writeFile(
+        "userPantryDetails.json",
+        JSON.stringify(cartPageItems, null, 2),
+        (err) => {
+          if (err) console.log(err);
+          else {
+            console.log("data deleted successfully");
+          }
+        }
+      );
     }
-  );
-  res.json({ message: "ok" });
+  });
 });
 
 app.post("/addToCart", function (req, res) {
@@ -137,34 +204,39 @@ app.post("/addToCart", function (req, res) {
   fs.readFile("userPantryDetails.json", function (err, data) {
     if (err) {
       console.log(err);
-    }
-    let userDataExists = false;
-    let userStockData = JSON.parse(data);
-    for (let i = 0; i < userStockData.length; i++) {
-      if (userStockData[i].currentUserMail == userMail) {
-        userDataExists = true;
-        userStockData[i].groceryDetails.push(userCartDetails);
-      }
-    }
-    if (userDataExists === false) {
-      userStockData.push({
-        currentUserMail: userMail,
-        groceryDetails: [userCartDetails],
-      });
-    }
-    console.log(userStockData);
-    fs.writeFile(
-      "userPantryDetails.json",
-      JSON.stringify(userStockData, null, 2),
-      (err) => {
-        if (err) console.log(err);
-        else {
-          console.log("File written successfully");
+    } else {
+      let userDataExists = false;
+      let userStockData = JSON.parse(data);
+      console.log("userstockdata is", userStockData);
+      for (let i = 0; i < userStockData.length; i++) {
+        if (
+          userStockData !== null &&
+          userStockData[i].currentUserMail === userMail
+        ) {
+          userDataExists = true;
+          userStockData[i].groceryDetails.push(userCartDetails);
         }
       }
-    );
+      if (userDataExists === false) {
+        userStockData.push({
+          currentUserMail: userMail,
+          groceryDetails: [userCartDetails],
+        });
+      }
+      console.log(userStockData);
+      fs.writeFile(
+        "userPantryDetails.json",
+        JSON.stringify(userStockData, null, 2),
+        (err) => {
+          if (err) console.log(err);
+          else {
+            console.log("File written successfully");
+          }
+        }
+      );
+    }
   });
-  res.json({message:"ok"});
+  res.json({ message: "ok" });
 });
 
 app.post("/updateUserDetails", function (req, res) {
@@ -175,7 +247,6 @@ app.post("/updateUserDetails", function (req, res) {
       console.log(err);
     } else {
       let existingUserData = JSON.parse(data);
-      //console.log('existing data',existingUserData);
       for (let key in existingUserData) {
         console.log(key, existingUserData[key]);
         if (existingUserData[key].email == currentEmail) {
