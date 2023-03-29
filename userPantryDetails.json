@@ -1,22 +1,12 @@
 [
   {},
-  {
-    "currentUserMail": "steve@gmail.com",
-    "groceryDetails": [
-      {
-        "name": "apple",
-        "stockleft": "10",
-        "totalstock": "12",
-        "price": "120",
-        "quantity": "1"
-      },
-      {
-        "name": "grapes",
-        "stockleft": "20",
-        "totalstock": "30",
-        "price": "60",
-        "quantity": "1"
-      }
-    ]
-  }
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {}
 ]

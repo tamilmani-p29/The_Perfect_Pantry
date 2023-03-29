@@ -195,6 +195,38 @@ app.post("/sendCartOrders", function (req, res) {
       );
     }
   });
+ fs.readFile("pantryStock.json", function (err, data) {
+   if (err) {
+     console.log(err);
+   } else {
+     let pantryHistory = JSON.parse(data); 
+     
+     let ordersAlone = currentCartOrders.orders; 
+     console.log("orders are", ordersAlone); 
+     for(let order in ordersAlone){
+      for(let category in pantryHistory){
+        for(let i=0; i<pantryHistory[category].length; i++){
+          if(pantryHistory[category][i].name === order){
+            let stockLeft = parseInt(pantryHistory[category][i].stockleft) - ordersAlone[order].quantity;
+            console.log("the left over stock is", stockLeft);
+            pantryHistory[category][i].stockleft = stockLeft.toString(); 
+            console.log(pantryHistory[category][i]);
+          }
+        }
+      }
+     }
+     fs.writeFile(
+       "pantryStock.json",
+       JSON.stringify(pantryHistory, null, 2),
+       (err) => {
+         if (err) console.log(err);
+         else {
+           console.log("stock updated successfully");
+         }
+       }
+     );
+   }
+ });
 });
 
 app.post("/addToCart", function (req, res) {
