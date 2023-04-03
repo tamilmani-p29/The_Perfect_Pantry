@@ -948,5 +948,43 @@
         "quantity": 1
       }
     }
+  },
+  {
+    "currentUserMail": "ara@gmail.com",
+    "orders": {
+      "banana": {
+        "price": 120,
+        "quantity": 4
+      },
+      "papaya": {
+        "price": 30,
+        "quantity": 1
+      },
+      "orange": {
+        "price": 80,
+        "quantity": 1
+      },
+      "chilly": {
+        "price": 80,
+        "quantity": 1
+      },
+      "ladysfinger": {
+        "price": 40,
+        "quantity": 1
+      },
+      "greentea": {
+        "price": 30,
+        "quantity": 1
+      }
+    }
+  },
+  {
+    "currentUserMail": "ara@gmail.com",
+    "orders": {
+      "apple": {
+        "price": 120,
+        "quantity": 1
+      }
+    }
   }
 ]

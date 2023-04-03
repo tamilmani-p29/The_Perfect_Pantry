@@ -2,13 +2,13 @@
   "fruits": [
     {
       "name": "apple",
-      "stockleft": "57",
+      "stockleft": "56",
       "totalstock": "120",
       "price": "120"
     },
     {
       "name": "banana",
-      "stockleft": "15",
+      "stockleft": "11",
       "totalstock": "25",
       "price": "30"
     },
@@ -26,13 +26,13 @@
     },
     {
       "name": "orange",
-      "stockleft": "18",
+      "stockleft": "17",
       "totalstock": "25",
       "price": "80"
     },
     {
       "name": "papaya",
-      "stockleft": "18",
+      "stockleft": "17",
       "totalstock": "35",
       "price": "30"
     },
@@ -82,13 +82,13 @@
     },
     {
       "name": "chilly",
-      "stockleft": "80",
+      "stockleft": "79",
       "totalstock": "92",
       "price": "80"
     },
     {
       "name": "ladysfinger",
-      "stockleft": "40",
+      "stockleft": "39",
       "totalstock": "64",
       "price": "40"
     },
@@ -206,7 +206,7 @@
     },
     {
       "name": "greentea",
-      "stockleft": "80",
+      "stockleft": "79",
       "totalstock": "98",
       "price": "30"
     },

@@ -145,6 +145,18 @@
         "stockleft": "18",
         "totalstock": "25",
         "price": "80"
+      },
+      {
+        "name": "burger",
+        "stockleft": "68",
+        "totalstock": "87",
+        "price": "60"
+      },
+      {
+        "name": "apple",
+        "stockleft": "57",
+        "totalstock": "120",
+        "price": "120"
       }
     ]
   }
