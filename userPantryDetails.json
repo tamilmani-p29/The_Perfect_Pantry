@@ -286,5 +286,73 @@
   },
   {},
   {},
-  {}
+  {},
+  {
+    "currentUserMail": "ara@gmail.com",
+    "groceryDetails": [
+      {
+        "name": "banana",
+        "stockleft": "15",
+        "totalstock": "25",
+        "price": "30",
+        "quantity": "1"
+      },
+      {
+        "name": "banana",
+        "stockleft": "15",
+        "totalstock": "25",
+        "price": "30",
+        "quantity": "1"
+      },
+      {
+        "name": "banana",
+        "stockleft": "15",
+        "totalstock": "25",
+        "price": "30",
+        "quantity": "1"
+      },
+      {
+        "name": "banana",
+        "stockleft": "15",
+        "totalstock": "25",
+        "price": "30",
+        "quantity": "1"
+      },
+      {
+        "name": "papaya",
+        "stockleft": "18",
+        "totalstock": "35",
+        "price": "30",
+        "quantity": "1"
+      },
+      {
+        "name": "orange",
+        "stockleft": "18",
+        "totalstock": "25",
+        "price": "80",
+        "quantity": "1"
+      },
+      {
+        "name": "chilly",
+        "stockleft": "80",
+        "totalstock": "92",
+        "price": "80",
+        "quantity": "1"
+      },
+      {
+        "name": "ladysfinger",
+        "stockleft": "40",
+        "totalstock": "64",
+        "price": "40",
+        "quantity": "1"
+      },
+      {
+        "name": "greentea",
+        "stockleft": "80",
+        "totalstock": "98",
+        "price": "30",
+        "quantity": "1"
+      }
+    ]
+  }
 ]
