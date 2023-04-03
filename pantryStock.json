@@ -64,7 +64,7 @@
   "vegetables": [
     {
       "name": "beetroot",
-      "stockleft": "42",
+      "stockleft": "41",
       "totalstock": "84",
       "price": "25"
     },

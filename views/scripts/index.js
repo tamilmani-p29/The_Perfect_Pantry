@@ -123,7 +123,7 @@ function displayPopularItems() {
   let favouriteIcon;
   for (let i = 0; i < 10; i++) {
     if (favouritesArr.includes(currStock[i].name)) {
-      favouriteIcon = "red-fav2";
+      favouriteIcon = "lover";
     } else {
       favouriteIcon = "favourite";
     }
@@ -185,7 +185,7 @@ function displayPopularItems() {
         let favIconSrc = favouriteButtons[i].src.split("/")[5];
         console.log(favIconSrc);
         if (favIconSrc === "favourite.png") {
-          favouriteButtons[i].src = `../assets/general-images/red-fav2.png`;
+          favouriteButtons[i].src = `../assets/general-images/lover.png`;
           addProductToFavourites(
             stockDetails[currIndex][stockIndex],
             lowerCurrGrocery,
@@ -290,7 +290,7 @@ function displaySearchedPantry() {
           console.log(clickedCard);
           let currIndex = parseInt(clickedCard.id.split("-")[2]);
           let stockIndex = parseInt(clickedCard.id.split("-")[3]);
-          favouriteButtons[i].src = `../assets/general-images/red-fav2.png`;
+          favouriteButtons[i].src = `../assets/general-images/lover.png`;
           addProductToFavourites(
             stockDetails[currIndex][stockIndex],
             lowerCurrGrocery,
@@ -389,7 +389,7 @@ function displayGroceryCards(currGrocery) {
   for (let i = 0; i < currStock.length; i++) {
     //console.log("favourites array is", favouritesArr);
     if (favouritesArr.includes(currStock[i].name)) {
-      favouriteIcon = "red-fav2";
+      favouriteIcon = "lover";
     } else {
       favouriteIcon = "favourite";
     }
@@ -470,7 +470,7 @@ function displayGroceryCards(currGrocery) {
         let favIconSrc = favouriteButtons[i].src.split("/")[5]; 
         console.log(favIconSrc)
         if(favIconSrc === "favourite.png"){
-        favouriteButtons[i].src = `../assets/general-images/red-fav2.png`;
+        favouriteButtons[i].src = `../assets/general-images/lover.png`;
         addProductToFavourites(
           stockDetails[currIndex][stockIndex],
           lowerCurrGrocery,

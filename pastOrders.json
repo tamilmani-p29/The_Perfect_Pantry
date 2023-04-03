@@ -986,5 +986,14 @@
         "quantity": 1
       }
     }
+  },
+  {
+    "currentUserMail": "ara@gmail.com",
+    "orders": {
+      "beetroot": {
+        "price": 25,
+        "quantity": 1
+      }
+    }
   }
 ]

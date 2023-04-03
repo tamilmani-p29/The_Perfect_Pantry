@@ -15,6 +15,7 @@ body {
   display: grid;
   grid-template-columns: 12% 88%;
   height: 90vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .app-details {
@@ -97,7 +98,7 @@ body {
 }
 
 .fav-img {
-  width: 30px;
+  width: 26px;
   height: auto;
   cursor: pointer;
 }

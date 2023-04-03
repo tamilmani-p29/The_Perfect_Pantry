@@ -92,42 +92,12 @@
       {},
       {},
       {},
-      {
-        "name": "bread",
-        "stockleft": "68",
-        "totalstock": "94",
-        "price": "25"
-      },
-      {
-        "name": "apple",
-        "stockleft": "58",
-        "totalstock": "120",
-        "price": "120"
-      },
-      {
-        "name": "apple",
-        "stockleft": "58",
-        "totalstock": "120",
-        "price": "120"
-      },
-      {
-        "name": "bananachips",
-        "stockleft": "39",
-        "totalstock": "84",
-        "price": "40"
-      },
-      {
-        "name": "apple",
-        "stockleft": "58",
-        "totalstock": "120",
-        "price": "120"
-      },
-      {
-        "name": "strawberrycake",
-        "stockleft": "53",
-        "totalstock": "87",
-        "price": "50"
-      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
       {
         "name": "banana",
         "stockleft": "15",
@@ -152,11 +122,36 @@
         "totalstock": "87",
         "price": "60"
       },
+      {},
+      {
+        "name": "beetroot",
+        "stockleft": "42",
+        "totalstock": "84",
+        "price": "25"
+      },
+      {
+        "name": "brinjal",
+        "stockleft": "63",
+        "totalstock": "87",
+        "price": "15"
+      },
       {
         "name": "apple",
-        "stockleft": "57",
+        "stockleft": "56",
         "totalstock": "120",
         "price": "120"
+      },
+      {
+        "name": "apple",
+        "stockleft": "56",
+        "totalstock": "120",
+        "price": "120"
+      },
+      {
+        "name": "banana",
+        "stockleft": "11",
+        "totalstock": "25",
+        "price": "30"
       }
     ]
   }
