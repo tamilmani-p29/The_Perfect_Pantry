@@ -2,21 +2,289 @@
   {
     "currentUserMail": "steve@gmail.com",
     "groceryDetails": [
-
       {
-        "name": "papaya",
-        "stockleft": "19",
-        "totalstock": "35",
+        "name": "apple",
+        "stockleft": "60",
+        "totalstock": "120",
+        "price": "120",
+        "quantity": "1"
+      },
+      {
+        "name": "banana",
+        "stockleft": "15",
+        "totalstock": "25",
         "price": "30",
         "quantity": "1"
       },
       {
-        "name": "bananachips",
+        "name": "jackfruit",
+        "stockleft": "42",
+        "totalstock": "92",
+        "price": "100",
+        "quantity": "1"
+      },
+      {
+        "name": "jackfruit",
+        "stockleft": "42",
+        "totalstock": "92",
+        "price": "100",
+        "quantity": "1"
+      },
+      {
+        "name": "orange",
+        "stockleft": "18",
+        "totalstock": "25",
+        "price": "80",
+        "quantity": "1"
+      },
+      {
+        "name": "lassi",
+        "stockleft": "105",
+        "totalstock": "110",
+        "price": "30",
+        "quantity": "1"
+      },
+      {
+        "name": "milkshake",
+        "stockleft": "40",
+        "totalstock": "56",
+        "price": "50",
+        "quantity": "1"
+      },
+      {
+        "name": "apple",
         "stockleft": "60",
+        "totalstock": "120",
+        "price": "120",
+        "quantity": "1"
+      },
+      {
+        "name": "apple",
+        "stockleft": "60",
+        "totalstock": "120",
+        "price": "120",
+        "quantity": "1"
+      },
+      {
+        "name": "apple",
+        "stockleft": "60",
+        "totalstock": "120",
+        "price": "120",
+        "quantity": "1"
+      },
+      {
+        "name": "banana",
+        "stockleft": "15",
+        "totalstock": "25",
+        "price": "30",
+        "quantity": "1"
+      },
+      {
+        "name": "beetroot",
+        "stockleft": "42",
         "totalstock": "84",
-        "price": "40",
+        "price": "25",
+        "quantity": "1"
+      },
+      {
+        "name": "apple",
+        "stockleft": "60",
+        "totalstock": "120",
+        "price": "120",
+        "quantity": "1"
+      },
+      {
+        "name": "banana",
+        "stockleft": "15",
+        "totalstock": "25",
+        "price": "30",
+        "quantity": "1"
+      },
+      {
+        "name": "butter",
+        "stockleft": "7",
+        "totalstock": "54",
+        "price": "250",
+        "quantity": "1"
+      },
+      {
+        "name": "beer",
+        "stockleft": "56",
+        "totalstock": "104",
+        "price": "250",
+        "quantity": "1"
+      },
+      {
+        "name": "beer",
+        "stockleft": "56",
+        "totalstock": "104",
+        "price": "250",
+        "quantity": "1"
+      },
+      {
+        "name": "beer",
+        "stockleft": "56",
+        "totalstock": "104",
+        "price": "250",
+        "quantity": "1"
+      },
+      {
+        "name": "beer",
+        "stockleft": "56",
+        "totalstock": "104",
+        "price": "250",
+        "quantity": "1"
+      },
+      {
+        "name": "beer",
+        "stockleft": "56",
+        "totalstock": "104",
+        "price": "250",
+        "quantity": "1"
+      },
+      {
+        "name": "beer",
+        "stockleft": "56",
+        "totalstock": "104",
+        "price": "250",
+        "quantity": "1"
+      },
+      {
+        "name": "beer",
+        "stockleft": "56",
+        "totalstock": "104",
+        "price": "250",
+        "quantity": "1"
+      },
+      {
+        "name": "beer",
+        "stockleft": "56",
+        "totalstock": "104",
+        "price": "250",
+        "quantity": "1"
+      },
+      {
+        "name": "beer",
+        "stockleft": "56",
+        "totalstock": "104",
+        "price": "250",
+        "quantity": "1"
+      },
+      {
+        "name": "beer",
+        "stockleft": "56",
+        "totalstock": "104",
+        "price": "250",
+        "quantity": "1"
+      },
+      {
+        "name": "beer",
+        "stockleft": "56",
+        "totalstock": "104",
+        "price": "250",
+        "quantity": "1"
+      },
+      {
+        "name": "beer",
+        "stockleft": "56",
+        "totalstock": "104",
+        "price": "250",
+        "quantity": "1"
+      },
+      {
+        "name": "beer",
+        "stockleft": "56",
+        "totalstock": "104",
+        "price": "250",
+        "quantity": "1"
+      },
+      {
+        "name": "beer",
+        "stockleft": "56",
+        "totalstock": "104",
+        "price": "250",
+        "quantity": "1"
+      },
+      {
+        "name": "chilly",
+        "stockleft": "80",
+        "totalstock": "92",
+        "price": "80",
+        "quantity": "1"
+      },
+      {
+        "name": "chilly",
+        "stockleft": "80",
+        "totalstock": "92",
+        "price": "80",
+        "quantity": "1"
+      },
+      {
+        "name": "mushroom",
+        "stockleft": "40",
+        "totalstock": "56",
+        "price": "75",
+        "quantity": "1"
+      },
+      {
+        "name": "mushroom",
+        "stockleft": "40",
+        "totalstock": "56",
+        "price": "75",
+        "quantity": "1"
+      },
+      {
+        "name": "jackfruit",
+        "stockleft": "42",
+        "totalstock": "92",
+        "price": "100",
+        "quantity": "1"
+      },
+      {
+        "name": "tomato",
+        "stockleft": "76",
+        "totalstock": "89",
+        "price": "20",
+        "quantity": "1"
+      },
+      {
+        "name": "tomato",
+        "stockleft": "76",
+        "totalstock": "89",
+        "price": "20",
+        "quantity": "1"
+      },
+      {
+        "name": "bread",
+        "stockleft": "68",
+        "totalstock": "94",
+        "price": "25",
+        "quantity": "1"
+      },
+      {
+        "name": "bread",
+        "stockleft": "68",
+        "totalstock": "94",
+        "price": "25",
+        "quantity": "1"
+      },
+      {
+        "name": "bread",
+        "stockleft": "68",
+        "totalstock": "94",
+        "price": "25",
+        "quantity": "1"
+      },
+      {
+        "name": "bread",
+        "stockleft": "68",
+        "totalstock": "94",
+        "price": "25",
         "quantity": "1"
       }
     ]
-  }
+  },
+  {},
+  {},
+  {}
 ]

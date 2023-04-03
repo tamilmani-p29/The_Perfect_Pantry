@@ -1,6 +1,6 @@
 let currentUserMail;
 let allUserData;
-
+let originalPassword;
 let userName = document.querySelector("#name");
 let userPassword = document.querySelector("#password");
 let userEmail = document.querySelector("#email");
@@ -11,6 +11,7 @@ let addressChangeButton = document.querySelector("#address-change-btn");
 let saveButton = document.querySelector("#save-change-btn");
 let favSectionButton = document.querySelector("#fav-section-btn");
 let appDetails = document.querySelector("#app-details");
+let savePopup = document.querySelector("#save-change-popup");
 
 (function () {
   fetch("/getAllUserData")
@@ -28,14 +29,17 @@ let appDetails = document.querySelector("#app-details");
 
 nameChangeButton.addEventListener("click", function () {
   userName.contentEditable = "true";
+  userName.focus();
 });
 
 passwordChangeButton.addEventListener("click", function () {
   userPassword.contentEditable = "true";
+  userPassword.focus();
 });
 
 addressChangeButton.addEventListener("click", function () {
   userAddress.contentEditable = "true";
+  userAddress.focus();
 });
 
 favSectionButton.addEventListener("click", function () {
@@ -46,9 +50,10 @@ saveButton.addEventListener("click", function () {
   userName.contentEditable = "false";
   userPassword.contentEditable = "false";
   userAddress.contentEditable = "false";
+  let newPassword = originalPassword + userPassword.innerHTML.slice(originalPassword.length);
   newUserDetails = {
     newName: userName.innerHTML,
-    newPassword: userPassword.innerHTML,
+    newPassword: newPassword,
     newAddress: userAddress.innerHTML,
   };
   fetch("/updateUserDetails", {
@@ -60,6 +65,8 @@ saveButton.addEventListener("click", function () {
       ...newUserDetails,
     }),
   });
+  //savePopup.classList.remove("show");
+  alert("Changed saved");
 });
 function displayUserInfo() {
   console.log("insideuserinfo");
@@ -67,8 +74,13 @@ function displayUserInfo() {
   console.log(currentUserMail);
   for (let i = 0; i < allUserData.length; i++) {
     if (allUserData[i].email == currentUserMail) {
+      originalPassword = allUserData[i].password;
+      let hashedPassword = '';
+      for(let j=0; j<allUserData[i].password.length; j++){
+        hashedPassword +='*';
+      }
       userName.innerHTML = allUserData[i].name;
-      userPassword.innerHTML = allUserData[i].password;
+      userPassword.innerHTML = hashedPassword;
       userEmail.innerHTML = allUserData[i].email;
       userAddress.innerHTML = allUserData[i].address;
     }

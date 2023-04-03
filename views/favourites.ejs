@@ -16,7 +16,7 @@
                 <div class="app-logo"><img class="logo-img" src="./assets/general-images/logo.png"></div> 
                 <div class="app-name">The Perfect Pantry</div>
             </div> 
-            <div class="category-title">Favourites/<br>Past Orders</div> 
+            <div class="category-title">Favourites</div> 
             <div class="back-home"> 
                 <form action="/">
                     <button class="home-btn">Back To Home</button>
@@ -31,8 +31,7 @@
         <div class="display-container"> 
             <div class="options-tab"> 
                 <div class="search-bar">
-                    <input type="text" name="search-bar" placeholder="Search here"> 
-                    <img class="search-icon" src="./assets/general-images/search.png">
+                    Favourites
                 </div> 
                 <div class="cart"> 
                     <a href="/cart"><img class="cart-img" src="./assets/general-images/shopping-cart.png" alt="cart-option"></a>
@@ -42,9 +41,9 @@
                 </div>
             </div> 
             <div class="favourite-items"> 
-                <div class="favourite-heading">Favourites</div>  
+                <div class="favourite-heading"></div>  
                 <div class="pantry-items">
-                    <div class="favourite-items-carousel"> 
+                    <div id="favourite-items-carousel" class="favourite-items-carousel"> 
                         <div class="scroll-btn"><img class="prev-btn" src="./assets/general-images/previous.png"></div>
                         <div class="grocery-card"> 
                         <div class="grocery-img"><img class="img-item" src="./assets/groceries/fruits/apple.jpg"></div> 
@@ -113,46 +112,10 @@
                     </div>
                 </div> 
             </div>
-            <div class="pastoders-container"> 
-                <div class="pastorders-heading">Past Orders</div>
-                <div class="pastorder-cols"> 
-                    <div class="product-name-title">Product</div> 
-                    <div class="quantity-title">Quantity</div> 
-                    <div class="price-title">Price</div>
-                </div>  
-                <div class="pastorder-items"> 
-                    <div class="pastorder-item">
-                        <div class="product-name">Apple</div> 
-                        <div class="quantity">2</div>
-                        <div class="price">20</div>
-                    </div>
-                    <div class="pastorder-item">
-                        <div class="product-name">Apple</div> 
-                        <div class="quantity">2</div>
-                        <div class="price">20</div>
-                    </div>
-                    <div class="pastorder-item">
-                        <div class="product-name">Apple</div> 
-                        <div class="quantity">2</div>
-                        <div class="price">20</div>
-                    </div>
-                    <div class="pastorder-item">
-                        <div class="product-name">Apple</div> 
-                        <div class="quantity">2</div>
-                        <div class="price">20</div>
-                    </div>
-                    <div class="pastorder-item">
-                        <div class="product-name">Apple</div> 
-                        <div class="quantity">2</div>
-                        <div class="price">20</div>
-                    </div>
-                </div>
-                </div>
-            </div>
         </div>
     </div>
 </head>
 <body>
-    
+    <script src="./scripts/favourites.js"></script>
 </body>
 </html>

@@ -90,7 +90,7 @@ body{
 } 
 
 .back-home{
-    margin-top: 190px;
+    margin-top: 110%;
 }
 
 .categories{
@@ -135,18 +135,22 @@ body{
     border-style: none;
     border-radius: 24px;
     width: 60%;
+    cursor: pointer;
 
+}
+.name-edit-btn:hover, .password-edit-btn:hover, .address-edit-btn:hover, .save-change-btn:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 .name, .email, .password, .address{
     padding: 14px; 
-    background-color: #9b9b9b;
+    background-color: #d3d7da;
     border-radius: 24px;
 }
 
 .address{
     max-width: 1fr; 
     min-width: 1fr;
-    height: 120px;
+    height: 90px;
 } 
 
 .save-change-btn{
@@ -158,4 +162,47 @@ body{
     border-radius: 24px;
     margin-left: 68%;
     width: 200px;
+}
+
+.save-changes-popup {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.save-changes-popup::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }

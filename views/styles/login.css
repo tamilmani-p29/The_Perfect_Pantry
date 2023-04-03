@@ -121,10 +121,17 @@ input{
     margin-right: -36px;
     margin-top: 30px;
 } 
-.alert-msg{
+.alert-msg-success, .alert-msg-danger{
     text-align: center;
     margin-top: 12px;
     margin-bottom: 12px;
     font-size: 16px;
+}
+
+.alert-msg-danger{
     color: #DC3030;
+}
+
+.alert-msg-success{
+    color: #30dc3e;
 }

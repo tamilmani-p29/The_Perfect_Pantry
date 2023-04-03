@@ -89,7 +89,7 @@ function displayCartItems() {
                               <div class="product-name">${grocery}</div>
                               <div class="quantity">${displayItems[grocery].quantity}</div>
                               <div class="price">${displayItems[grocery].price}</div>
-                              <span title="Remove from Cart" id="remove" class="close-${groceryIndex} close-popup" onclick="removeElement(this)">&times;</span>
+                              <span title="Remove from Cart" id="remove" class="close-${groceryIndex} close-remove" onclick="removeElement(this)">&times;</span>
                             </div>`;
           groceryIndex++;
         }
@@ -134,6 +134,10 @@ function removeElement(event) {
       currentMail: currentMail,
       removeElement: event.parentNode.children[0].innerHTML,
     }),
+  })
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
   });
 }
 

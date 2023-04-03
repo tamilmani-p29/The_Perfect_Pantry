@@ -1,0 +1,151 @@
+[
+  {
+    "currentUserMail": "steve@gmail.com",
+    "groceryDetails": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "name": "jackfruit",
+        "stockleft": "42",
+        "totalstock": "92",
+        "price": "100",
+        "quantity": "1"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "name": "apple",
+        "stockleft": "60",
+        "totalstock": "120",
+        "price": "120"
+      },
+      {
+        "name": "bread",
+        "stockleft": "68",
+        "totalstock": "94",
+        "price": "25"
+      }
+    ]
+  },
+  {
+    "currentUserMail": "ASH@GMAIL",
+    "groceryDetails": [
+      {
+        "name": "frenchfries",
+        "stockleft": "80",
+        "totalstock": "92",
+        "price": "60"
+      },
+      {
+        "name": "cookies",
+        "stockleft": "54",
+        "totalstock": "76",
+        "price": "40"
+      },
+      {
+        "name": "strawberrycake",
+        "stockleft": "60",
+        "totalstock": "87",
+        "price": "50"
+      },
+      {
+        "name": "peer",
+        "stockleft": "39",
+        "totalstock": "55",
+        "price": "70"
+      }
+    ]
+  },
+  {
+    "currentUserMail": "ara@gmail.com",
+    "groceryDetails": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "name": "bread",
+        "stockleft": "68",
+        "totalstock": "94",
+        "price": "25"
+      },
+      {
+        "name": "apple",
+        "stockleft": "58",
+        "totalstock": "120",
+        "price": "120"
+      },
+      {
+        "name": "apple",
+        "stockleft": "58",
+        "totalstock": "120",
+        "price": "120"
+      },
+      {
+        "name": "bananachips",
+        "stockleft": "39",
+        "totalstock": "84",
+        "price": "40"
+      },
+      {
+        "name": "apple",
+        "stockleft": "58",
+        "totalstock": "120",
+        "price": "120"
+      },
+      {
+        "name": "strawberrycake",
+        "stockleft": "53",
+        "totalstock": "87",
+        "price": "50"
+      },
+      {
+        "name": "banana",
+        "stockleft": "15",
+        "totalstock": "25",
+        "price": "30"
+      },
+      {
+        "name": "banana",
+        "stockleft": "15",
+        "totalstock": "25",
+        "price": "30"
+      },
+      {
+        "name": "orange",
+        "stockleft": "18",
+        "totalstock": "25",
+        "price": "80"
+      }
+    ]
+  }
+]
