@@ -125,6 +125,7 @@ function removeElement(event) {
   console.log('the reduced price is', event.parentNode.children[2].innerHTML)
   totalValue.innerHTML -= event.parentNode.children[2].innerHTML;
   event.parentNode.remove();
+  alert("Item is removed from Cart");
   fetch("/removeElementsFromCart", {
     method: "POST",
     headers: {
