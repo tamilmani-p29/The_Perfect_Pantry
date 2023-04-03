@@ -132,14 +132,10 @@ function removeElement(event) {
       "Content-Type": "application/json; charset=UTF-8",
     },
     body: JSON.stringify({
-      currentMail: currentMail,
-      removeElement: event.parentNode.children[0].innerHTML,
+      "currentMail": currentMail,
+      "removeElement": event.parentNode.children[0].innerHTML,
     }),
   })
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data);
-  });
 }
 
 appDetails.addEventListener("click", function () {

@@ -152,6 +152,46 @@
         "stockleft": "11",
         "totalstock": "25",
         "price": "30"
+      },
+      {
+        "name": "apple",
+        "stockleft": "56",
+        "totalstock": "120",
+        "price": "120"
+      },
+      {
+        "name": "bananachips",
+        "stockleft": "39",
+        "totalstock": "84",
+        "price": "40"
+      },
+      {
+        "name": "pomegranate",
+        "stockleft": "29",
+        "totalstock": "65",
+        "price": "100"
+      },
+      {
+        "name": "bread",
+        "stockleft": "68",
+        "totalstock": "94",
+        "price": "25"
+      }
+    ]
+  },
+  {
+    "currentUserMail": "priya@gmail.com",
+    "groceryDetails": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {
+        "name": "banana",
+        "stockleft": "11",
+        "totalstock": "25",
+        "price": "30"
       }
     ]
   }

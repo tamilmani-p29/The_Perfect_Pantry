@@ -113,12 +113,13 @@ app.get("/getAllUserData", function (req, res) {
 
 app.get("/getCurrentUserMail", function (req, res) {
   console.log(currentEmail);
-  res.json({ email: currentEmail });
+  res.json({ "email": currentEmail });
 });
 
 app.post("/removeElementsFromCart", function (req, res) {
   const itemToRemove = req.body.removeElement;
   const currentUserMail = req.body.currentMail;
+  console.log(itemToRemove);
   console.log("item to be removed is ", itemToRemove);
   fs.readFile("userPantryDetails.json", function (err, data) {
     if (err) {
@@ -158,7 +159,6 @@ app.post("/removeElementsFromCart", function (req, res) {
       );
     }
   });
-  res.json({ isCartEmtpy });
 });
 
 app.post("/sendCartOrders", function (req, res) {

@@ -293,13 +293,25 @@
   {
     "currentUserMail": "ara@gmail.com",
     "groceryDetails": [
-      {
-        "name": "brinjal",
-        "stockleft": "63",
-        "totalstock": "87",
-        "price": "15",
-        "quantity": "1"
-      }
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "currentUserMail": "priya@gmail.com",
+    "groceryDetails": [
+      {},
+      {},
+      {},
+      {}
     ]
   }
 ]
